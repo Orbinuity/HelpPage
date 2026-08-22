@@ -1,0 +1,141 @@
+.docs-container {
+    display: grid !important;
+    grid-template-columns: 250px 1fr !important;
+    gap: 3rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    width: 100%;
+    flex: 1;
+}
+
+main.content {
+    width: 100%;
+    min-width: 0;
+}
+
+aside.sidebar nav.docs-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+}
+
+aside.sidebar .nav-group {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.25rem !important;
+    width: 100%;
+}
+
+aside.sidebar ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+aside.sidebar li.sub-link {
+    margin-left: 0.75rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid var(--border);
+}
+
+aside.sidebar a::after {
+    display: none !important;
+}
+
+main.content :not(pre) > code {
+    background-color: rgba(110, 118, 129, 0.15);
+    color: #0969da;
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 85%;
+}
+
+main.content pre {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+main.content pre code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background: transparent !important;
+    padding: 0 !important;
+    display: block;
+}
+
+code.language-bash, 
+code.language-powershell {
+    color: #79c0ff !important;
+}
+
+pre:has(code.language-bash),
+pre:has(code.language-powershell) {
+    border-left: 4px solid #58a6ff;
+}
+
+main.content pre code {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+#doc-card.card, 
+.card {
+    padding: 2.5rem !important;
+}
+
+#doc-card > *:first-child {
+    margin-top: 0 !important;
+}
+
+#doc-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #30363d;
+}
+
+#doc-card h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.75rem;
+    margin-bottom: 0.4rem;
+    color: #f0f6fc;
+}
+
+#doc-card h3 {
+    font-size: 1.1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+
+#doc-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+#doc-card blockquote {
+    margin: 1rem 0;
+    padding: 0.6rem 1rem;
+    color: #8b949e;
+    background-color: rgba(110, 118, 129, 0.1);
+    border-left: 4px solid #58a6ff;
+    border-radius: 0 6px 6px 0;
+}
+
+#doc-card blockquote p {
+    margin: 0 !important;
+    color: #c9d1d9;
+    font-size: 0.95rem;
+}
